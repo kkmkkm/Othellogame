@@ -1,1 +1,1 @@
-# Othellogame
+# オセロゲーム
