@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#othello-board {
+    display: grid;
+    /* 8x8のグリッドレイアウト */
+    grid-template-columns: repeat(8, 60px); 
+    grid-template-rows: repeat(8, 60px);
+    margin: 20px auto;
+    border: 4px solid #333;
+    background-color: #006400; /* オセロ盤の緑 */
+}
+
+/* 各マスのスタイル */
+.square {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* コマのスタイル */
+.disc {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* 円形 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
